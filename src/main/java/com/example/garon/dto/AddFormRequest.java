@@ -15,7 +15,7 @@ import java.sql.Date;
 public class AddFormRequest {
     private Date startDate;
     private String startTime;
-    private String studentId;
+    private Long studentId;
     private String name;
     private String sex;
     private String phone;
