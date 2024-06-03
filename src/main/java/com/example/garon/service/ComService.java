@@ -17,9 +17,7 @@ public class ComService {
 
 
     public Form save(AddFormRequest request) {
-        if (!canSelectTime(request)) {
-            throw new IllegalArgumentException("해당 시간에는 더 이상 선택할 수 없습니다.");
-        }
+
         return comRepository.save(request.toEntity());
     }
 
